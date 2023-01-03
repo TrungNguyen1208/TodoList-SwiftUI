@@ -14,9 +14,9 @@ struct ListRowView: View {
   var body: some View {
     HStack {
       Image(systemName: item.isCompleted ? "checkmark.circle" : "circle")
-        .foregroundColor(item.isCompleted ? .green : .black)
+        .foregroundColor(item.isCompleted ? Color(UIColor.systemGreen) : Color(UIColor.darkGray))
       Text(item.title)
-        .foregroundColor(item.isCompleted ? .green : .black)
+        .foregroundColor(item.isCompleted ? Color(UIColor.systemGreen) : Color(UIColor.darkGray))
       Spacer()
     }
     .font(.title2)
